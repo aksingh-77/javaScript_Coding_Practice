@@ -5,7 +5,7 @@ const removeVowels = (str) => {
   if (!str) return false;
   let updatedStr = "";
   for (let char of str) {
-    if (!vowels.includes(char)) {
+    if (!vowels.includes(char.toLowerCase())) {
       updatedStr += char;
     }
   }
